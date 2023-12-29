@@ -1,5 +1,5 @@
 const http = require('http');
-const usersController = require('./controllers/usersController');
+const usersController = require('./controllers/getUsersController');
 const findUserController = require('./controllers/findUserController');
 
 const server = http.createServer(async (req, res) => {
@@ -14,6 +14,4 @@ const server = http.createServer(async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3001;
-
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = server; 

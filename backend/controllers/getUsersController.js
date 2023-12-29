@@ -1,4 +1,4 @@
-const usersData = require('../services/usersModel');
+const usersData = require('../services/usersService');
 const { CustomError, handleError } = require('../utils/errorUtils');
 
 async function getUsers(req, res) {

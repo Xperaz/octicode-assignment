@@ -1,4 +1,4 @@
-const Data = require('../services/usersModel');
+const Data = require('../services/usersService');
 const { CustomError, handleError } = require('../utils/errorUtils');
 
 async function findUser(req, res) {

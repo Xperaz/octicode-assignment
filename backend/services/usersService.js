@@ -1,8 +1,8 @@
-
+require('dotenv').config();
 
 async function getData() {
     try {
-        const response = await fetch('https://dummyjson.com/users', {
+        const response = await fetch(`${process.env.DATA_URL}`, {
             headers: {
                 'Content-Type': 'application/json',
             },
