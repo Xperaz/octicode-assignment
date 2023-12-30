@@ -52,10 +52,10 @@ const Users = () => {
     <>
     <div className='flex w-[70%]'>
       <input type="text" placeholder='search' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} 
-          className='outline-none text-black w-full p-1' 
+          className='outline-none text-black w-full p-1 rounded-l-md' 
       />
 
-      <button className='bg-[#ffd01a] p-1' onClick={handleSearch}>Search</button>
+      <button className='bg-[#ffd01a] p-[0.7rem] rounded-r-md' onClick={handleSearch}>Search</button>
     </div>
       {!loading ? (
         <>
@@ -65,7 +65,7 @@ const Users = () => {
             <>
               <div className='flex flex-col md:flex-row md:flex-wrap gap-10 md:justify-center'>
               {currentPosts.map((user) => (
-                <div key={user.id} className='w-[300px] h-[400px] card-effect'>
+                <div key={user.id} className='w-[300px] h-[400px] card-effect hover:scale-105'>
                 <Card {...user} />
               </div>
               ))}
