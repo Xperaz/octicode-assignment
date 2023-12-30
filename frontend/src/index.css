@@ -24,3 +24,17 @@ body {
 .profile-shadow {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.shimmer-effect {
+    opacity: .7;
+    animation: shimmer-ui 2s linear infinite alternate;
+}
+
+@keyframes shimmer-ui {
+    0% {
+        background-color: hsl(200, 20%, 85%);
+      }
+      100% {
+        background-color: hsl(200, 20%, 95%);
+      }
+}

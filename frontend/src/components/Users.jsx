@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
+import Shimmer from './Shimmer';
 
 const Users = () => {
   const [listOfUsers, setListOfUsers] = useState([]);
@@ -48,6 +49,8 @@ const Users = () => {
     }
   }
 
+  const items = Array(postsPerPage).fill(1);
+
   return (
     <>
     <div className='flex w-[70%]'>
@@ -75,8 +78,16 @@ const Users = () => {
             )}
          </>
       ) : (
-        <p>loading...</p>
-      ) }
+        <div className='flex flex-col md:flex-row md:flex-wrap gap-10 md:justify-center'>
+                {
+                  items.map((item, index) => (
+                    <div key={`${item} + ${index}`} className='w-[300px] h-[400px] card-effect bg-[#dddddd] rounded-[1rem]'>
+                      <Shimmer />
+                    </div>
+                  ))
+                }
+        </div>
+       ) }
     </>
   )
 }
