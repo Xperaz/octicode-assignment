@@ -9,28 +9,29 @@ Create a Rest API to get their users from a Database and display them. Using Van
 
 ## First choice
 
-- Go to the root directory, then open your terminal: `docker compose up -d`
-- Now you can see the app in your localhost: ``` localhost:3000 ```
+1. Go to the root directory, then open your terminal: `docker compose up -d`
+2. Now you can see the app in your localhost: ``` localhost:3000 ```
 
-  I assume that you have docker in your machine, and it's running.
+> [!IMPORTANT]  
+> I assume that you have docker in your machine, and it's running.
 
 ## Second choice
 
- - run backend:
-        1. First go to the backend directory: type ``` cd backend ``` in your terminal from the root project directory.
-        2. Then run ``` npm install ```.
-        3. Run ``` npm start ```.
+ 1. run backend:
+    - First go to the backend directory: type ``` cd backend ``` in your terminal from the root project directory.
+    - Then run ``` npm install ```.
+    - Run ``` npm start ```.
+
+ 2. Run front end:
+    - First go to the frontend directory: type ``` cd frontend ``` in your terminal from the root project directory.
+    - Then run ``` npm install ```.
+    - Run ``` npm start ```.
+
+ 4. Now you can see the app in your localhost ``` localhost:3000 ```
 
  - To run backend tests:
-        - Run ``` npm test ```
-
-
- - Run front end:
-        1. 1. First go to the frontend directory: type ``` cd frontend ``` in your terminal from the root project directory.
-        2. Then run ``` npm install ```.
-        3. Run ``` npm start ```.
-
- - Now you can see the app in your localhost ``` localhost:3000 ```
+   - Run ``` npm test ```
  
- - > [!WARNING]
+  
+  > [!WARNING]
    > If you decide to use the second choice please run the backend first then frontend.
