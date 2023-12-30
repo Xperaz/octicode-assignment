@@ -1,6 +1,6 @@
 # octicode-assignment
 
-Create a Rest API to get their users from a Database and display them. Using Vanilla nodejs for the backend and reactjs for the frontend and tailwindcss for styling.
+Create a Rest API to get users from a Database and display them. Using Vanilla nodejs for the backend and reactjs for the frontend and tailwindcss for styling.
 
 # How to run?
 
