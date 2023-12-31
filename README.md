@@ -9,7 +9,7 @@ Create a Rest API to get users from a Database and display them. Using Vanilla n
 
 ## First choice
 
-1. Go to the root directory, then open your terminal: `docker compose up -d`
+1. Go to the root directory, then open your terminal and run: `docker compose up -d`
 2. Now you can see the app in your localhost: ``` localhost:3000 ```
 
 > [!IMPORTANT]  
